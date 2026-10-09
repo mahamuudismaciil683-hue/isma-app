@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Macad Al Hidaaya</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <div class="logo-icon">☪</div>
+
+            <div>
+                <h1>Macad Al Hidaaya</h1>
+                <p>Machadka Hanuunka iyo Waxbarashada</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#home">Bogga Hore</a>
+            <a href="#students">Ardayda</a>
+            <a href="#teachers">Macallimiinta</a>
+            <a href="#subjects">Maadooyinka</a>
+            <a href="#schedule">Jadwalka</a>
+            <a href="#exams">Imtixaanka</a>
+            <a href="#fees">Lacagta</a>
+        </nav>
+    </header>
+
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <span class="welcome">بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ</span>
+
+            <h2>Ku Soo Dhawoow</h2>
+
+            <h1>Macad Al Hidaaya</h1>
+
+            <p>
+                Goob waxbarasho oo lagu barto Qur'aanka,
+                cilmiga Islaamka iyo aqoonta guud.
+            </p>
+
+            <button onclick="openSection('students')">
+                Diiwaangeli Arday
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- STATISTICS -->
+    <section class="container">
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <span>👨‍🎓</span>
+                <h3 id="studentCount">0</h3>
+                <p>Arday</p>
+            </div>
+
+            <div class="stat-card">
+                <span>👨‍🏫</span>
+                <h3>2</h3>
+                <p>Macallimiin</p>
+            </div>
+
+            <div class="stat-card">
+                <span>📚</span>
+                <h3>8</h3>
+                <p>Maadooyin</p>
+            </div>
+
+            <div class="stat-card">
+                <span>💵</span>
+                <h3>$1</h3>
+                <p>Qofkiiba</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STUDENTS -->
+    <section id="students" class="container">
+
+        <div class="section-title">
+            <span>👨‍🎓</span>
+            <h2>Diiwaangelinta Ardayda</h2>
+            <p>Ku qor xogta ardayga</p>
+        </div>
+
+
+        <div class="form-card">
+
+            <form id="studentForm">
+
+                <div class="form-grid">
+
+                    <div>
+                        <label>Magaca oo Buuxa</label>
+                        <input
+                            type="text"
+                            id="studentName"
+                            placeholder="Magaca ardayga"
+                            required
+                        >
+                    </div>
+
+
+                    <div>
+                        <label>Da'da</label>
+                        <input
+                            type="number"
+                            id="studentAge"
+                            placeholder="Da'da"
+                        >
+                    </div>
+
+
+                    <div>
+                        <label>Telefoon</label>
+                        <input
+                            type="text"
+                            id="studentPhone"
+                            placeholder="061..."
+                        >
+                    </div>
+
+
+                    <div>
+                        <label>Fasalka</label>
+
+                        <select id="studentClass">
+
+                            <option value="">
+                                Dooro fasalka
+                            </option>
+
+                            <option>Fasalka 1</option>
+                            <option>Fasalka 2</option>
+                            <option>Fasalka 3</option>
+                            <option>Fasalka 4</option>
+                            <option>Fasalka 5</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <label>Xog Dheeraad ah</label>
+
+                <textarea
+                    id="studentInfo"
+                    placeholder="Xog kale oo ku saabsan ardayga..."
+                ></textarea>
+
+
+                <button class="primary" type="submit">
+                    ➕ Diiwaangeli Ardayga
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="table-card">
+
+            <h3>Liiska Ardayda</h3>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>#</th>
+                            <th>Magaca</th>
+                            <th>Da'da</th>
+                            <th>Telefoon</th>
+                            <th>Fasal</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="studentTable"></tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TEACHERS -->
+    <section id="teachers" class="container">
+
+        <div class="section-title">
+
+            <span>👨‍🏫</span>
+
+            <h2>Macallimiinta</h2>
+
+            <p>Macallimiinta Macad Al Hidaaya</p>
+        </div>
+                    <div>
+                        <label>Telefoon</label>
+                        <input
+                            type="text"
+                            id="studentPhone"
+                            placeholder="061 1131444 /061824989..."
+                        >
+                    </div>
+
+
+
+
+
+
+
+        </div>
+
+
+        <div class="cards">
+
+            <div class="teacher-card">
+
+                <div class="teacher-icon">👨‍🏫</div>
+
+                <h3>Ustaad Aways</h3>
+
+                <p>Macallin</p>
+
+            </div>
+
+
+            <div class="teacher-card">
+
+                <div class="teacher-icon">👨‍🏫</div>
+
+                <h3>Ustaad Ismaaciil</h3>
+
+                <p>Macallin</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SUBJECTS -->
+    <section id="subjects" class="container">
+
+        <div class="section-title">
+
+            <span>📚</span>
+
+            <h2>Maadooyinka</h2>
+
+            <p>Maadooyinka lagu barto machadka</p>
+
+        </div>
+
+
+        <div class="subjects">
+
+            <div class="subject">📖 <b>Somali</b></div>
+
+            <div class="subject">➗ <b>Xisaab</b></div>
+
+            <div class="subject">📗 <b>Taysiir</b></div>
+
+            <div class="subject">⚖️ <b>Fiqi</b></div>
+
+            <div class="subject">🌙 <b>Siiro</b></div>
+
+            <div class="subject">📕 <b>Qur'aan</b></div>
+
+            <div class="subject">🔤 <b>Hingaad</b></div>
+
+            <div class="subject">🤲 <b>Adkaar</b></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCHEDULE -->
+    <section id="schedule" class="container">
+
+        <div class="section-title">
+
+            <span>📅</span>
+
+            <h2>Jadwalka Casharrada</h2>
+
+            <p>Jadwalka toddobaadlaha ah</p>
+
+        </div>
+
+
+        <div class="schedule">
+
+            <div class="day">
+
+                <h3>Sabti</h3>
+
+                <div>
+                    📖 Somali
+                </div>
+
+                <div>
+                    ➗ Xisaab
+                </div>
+
+                <div>
+                    ⚖️ Fiqi
+                </div>
+
+            </div>
+
+
+            <div class="day">
+
+                <h3>Axad</h3>
+
+                <div>📖 Somali</div>
+
+                <div>➗ Xisaab</div>
+
+                <div>⚖️ Fiqi</div>
+
+            </div>
+
+
+            <div class="day">
+
+                <h3>Isniin</h3>
+
+                <div>📖 Somali</div>
+
+                <div>➗ Xisaab</div>
+
+                <div>📗 Taysiir</div>
+
+            </div>
+
+
+            <div class="day">
+
+                <h3>Talaado</h3>
+
+                <div>📖 Somali</div>
+
+                <div>➗ Xisaab</div>
+
+                <div>📗 Taysiir</div>
+
+                <div>🤲 Adkaar</div>
+
+            </div>
+
+
+            <div class="day competition">
+
+                <h3>Arbaco</h3>
+
+                <div>🏆 Tartan</div>
+
+                <p>Maanta waa maalinta tartanka</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXAMS -->
+    <section id="exams" class="container">
+
+        <div class="section-title">
+
+            <span>📝</span>
+
+            <h2>Qaybta Imtixaanka</h2>
+
+            <p>Halkan waxaad ku diyaarin kartaa imtixaannada</p>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <form id="examForm">
+
+                <label>Magaca Imtixaanka</label>
+
+                <input
+                    type="text"
+                    id="examTitle"
+                    placeholder="Tusaale: Imtixaanka Fiqiga"
+                    required
+                >
+
+
+                <label>Maadada</label>
+
+                <select id="examSubject">
+
+                    <option>Somali</option>
+                    <option>Xisaab</option>
+                    <option>Taysiir</option>
+                    <option>Fiqi</option>
+                    <option>Siiro</option>
+                    <option>Qur'aan</option>
+                    <option>Hingaad</option>
+                    <option>Adkaar</option>
+
+                </select>
+
+
+                <label>Su'aalaha Imtixaanka</label>
+
+                <textarea
+                    id="examQuestions"
+                    rows="10"
+                    placeholder="1. Su'aasha koowaad...
+2. Su'aasha labaad...
+3. Su'aasha saddexaad..."
+                    required
+                ></textarea>
+
+
+                <label>Taariikhda</label>
+
+                <input
+                    type="date"
+                    id="examDate"
+                >
+
+
+                <button class="primary" type="submit">
+                    💾 Kaydi Imtixaanka
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="table-card">
+
+            <h3>Imtixaannada La Diyaariyey</h3>
+
+            <div id="examList"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEES -->
+    <section id="fees" class="container">
+
+        <div class="section-title">
+
+            <span>💵</span>
+
+            <h2>Lacagta Ardayda</h2>
+
+            <p>Lacagta qof kasta waa $1</p>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <form id="paymentForm">
+
+                <label>Magaca Ardayga</label>
+
+                <input
+                    type="text"
+                    id="paymentName"
+                    placeholder="Magaca ardayga"
+                    required
+                >
+
+
+                <label>Lacagta</label>
+
+                <input
+                    type="number"
+                    id="paymentAmount"
+                    value="1"
+                    min="1"
+                >
+
+
+                <button class="primary" type="submit">
+                    💰 Kaydi Lacag-bixinta
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="table-card">
+
+            <h3>Lacag-bixinnada</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>#</th>
+                        <th>Arday</th>
+                        <th>Lacag</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="paymentTable"></tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>Machad Al Hidaaya</h2>
+
+        <p>
+            Waxbarasho • heer sare • Aqoon
+        </p>
+
+        <p>
+            © 2026 Machad Al Hidaaya
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
